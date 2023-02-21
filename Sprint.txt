@@ -1,0 +1,5 @@
+| Date |                                                            | Time |
+|02/19 |Read instructions and began writing pseudocode, implemented |1 hr  |
+|      |HashTable/HashEntry phase 1 changes                         |      |
+|02/20 |Got testUpdatedHashTable() to compile and output something  |30 min|
+|      |Completed phase 1                                           |
