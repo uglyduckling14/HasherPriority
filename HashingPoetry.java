@@ -3,11 +3,11 @@ import java.util.Scanner;
 
 public class HashingPoetry {
     public static void main(String[] args) {
-//        WritePoetry poem = new WritePoetry();
+        WritePoetry poem = new WritePoetry();
 
-//        System.out.println("--- Sam ---");
-//        System.out.println(poem.writePoem("green.txt", "sam", 30, false));
-//        System.out.println();
+        System.out.println("--- Sam ---");
+        System.out.println(poem.writePoem("green.txt", "sam", 50, true));//OG length=30, printHashTable = false;
+        System.out.println();
 
 //        System.out.println("--- Lester ---");
 //        System.out.println(poem.writePoem("lester.txt", "lester", 30, false));
@@ -18,7 +18,7 @@ public class HashingPoetry {
 //        System.out.println();
 
 //        testHashTable("zebra.txt");
-        testUpdatedHashTable();
+//        testUpdatedHashTable();
     }
 
 //    private static void testHashTable(String filename) {

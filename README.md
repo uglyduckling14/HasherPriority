@@ -12,8 +12,8 @@ the second distribution is the probability of seeing word W<sub>i+1</sub> give t
 word was W<sub>i</sub>.
 
 ### Example:
-Apple Mango Apple Mango Apple
-P(W)= P(Apple)=3/5
+Apple Mango Apple Mango Apple  
+P(W)= P(Apple)=3/5  
 P(W<sub>i+1</sub>|W<sub>i</sub>)=P(Mango)=2/5=P(Apple Mango)/P(Apple)
 
 ## Pseudocode(Phase 1):
@@ -47,3 +47,33 @@ The value associated with six is: 6
         }
 }
 ## Pseudocode(Phase 2):
+### WritePoetry CLASS:
+#### public String writePoem(String file, String startWord, int length, boolean printHashtable){
+    // file: document to read
+    // startWord: first word to generate
+    // length: how many words to generate
+    // printHashtable: print out hash table if true
+    File file = filename;
+    String[] writtenPoem = new String[];
+    String fileString = fileReader(file);
+    if(startWord is !, ?, ., ,){
+        startWord+=\n;
+    }
+    if(last word is not !, ?, ., ,){
+        last word += .;
+    }
+}
+#### private HashTable tableBuilder(String file, int count){
+    //split file string into String[]
+    //iterate thru String[]
+        //make sure word is not in addedWords[]
+            //create WordFreqInfo off of word and count
+            //insert WordFreqInfo
+            //add word to addedWords[]
+    //return Hashtable
+}
+### WordFreqInfo CLASS:
+#### public String getFollowWord(int count){
+    // count: randomly generated during poem generation 0 - (n-1)
+    // n: number of times a word follows the key from WordFreqInfo
+}

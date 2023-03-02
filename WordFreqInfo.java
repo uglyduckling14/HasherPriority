@@ -1,9 +1,9 @@
 import java.util.*;
 
 public class WordFreqInfo {
-    private String word;
-    private int occurCount;
-    private ArrayList<Frequency> followList;
+    private String word;// word we are counting the number of occurrences of
+    public int occurCount;
+    public ArrayList<Frequency> followList; //list of words that occur after this.word
 
     public WordFreqInfo(String word, int count) {
         this.word = word;
@@ -40,6 +40,16 @@ public class WordFreqInfo {
         return this.occurCount;
     }
 
+    public String getFollowWord(int count){
+        // count is number of instances where word follows key from WordFreqInfo instance
+        // selects correct following word based on count
+        for(Frequency f: followList){
+            if(f.followCount<count){
+                return f.follow;
+            }
+        }
+        return " ";
+    }
     private class Frequency {
         String follow;
         int followCount;
@@ -58,5 +68,6 @@ public class WordFreqInfo {
         public boolean equals(Object f2) {
             return this.follow.equals(((Frequency)f2).follow);
         }
+
     }
 }
