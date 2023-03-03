@@ -1,4 +1,3 @@
-
 // QuadraticProbing Hash table class
 //
 // CONSTRUCTION: an approximate initial size or default of 101

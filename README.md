@@ -64,13 +64,18 @@ The value associated with six is: 6
     }
 }
 #### private HashTable tableBuilder(String file, int count){
-    //split file string into String[]
-    //iterate thru String[]
-        //make sure word is not in addedWords[]
-            //create WordFreqInfo off of word and count
-            //insert WordFreqInfo
-            //add word to addedWords[]
-    //return Hashtable
+    // remove all \n from file.
+    // remove all " " from file == String array.
+    // for(int i=0; i< count; i++){
+        word.split("," or "." or "!" or "?");
+        if array[i] is not in table{
+            WordFreqInfo info = new WordFreqInfo(array[i], 0);
+            table.insert(array[i], info)
+        }else{
+            WordFreqInfo info = table.find(array[i]);
+        }
+    }
+    
 }
 ### WordFreqInfo CLASS:
 #### public String getFollowWord(int count){

@@ -6,7 +6,7 @@ public class HashingPoetry {
         WritePoetry poem = new WritePoetry();
 
         System.out.println("--- Sam ---");
-        System.out.println(poem.writePoem("green.txt", "sam", 50, true));//OG length=30, printHashTable = false;
+        System.out.println(poem.writePoem("green.txt", "sam", 30, true));//OG length=30, printHashTable = false;
         System.out.println();
 
 //        System.out.println("--- Lester ---");
