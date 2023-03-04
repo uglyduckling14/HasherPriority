@@ -77,8 +77,17 @@ The value associated with six is: 6
     }
     
 }
+#### private String poemBuilder()
 ### WordFreqInfo CLASS:
 #### public String getFollowWord(int count){
     // count: randomly generated during poem generation 0 - (n-1)
     // n: number of times a word follows the key from WordFreqInfo
+    // retrieve followList from info
+    // int prevCount = 0;
+    // for word in followList{
+        if(word.followCount>=count && count> prevCount){
+            return word;
+        }
+        prevCount+=word.followCount;
+    }
 }
